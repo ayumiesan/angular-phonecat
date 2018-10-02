@@ -17,4 +17,5 @@ phonecatApp.controller('PhoneListController', function PhoneListController($scop
       snippet: 'The Next, Next Generation tablet.'
     }
   ];
+  $scope.name = 'world';
 });
