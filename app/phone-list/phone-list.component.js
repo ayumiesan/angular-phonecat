@@ -21,7 +21,5 @@ angular.
           age: 3
         }
       ];
-
-      this.orderProp = 'age';
     }
   });
