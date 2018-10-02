@@ -19,6 +19,10 @@
   <body>
 
     <div ng-view></div>
-
+    <p>{{'lower cap string' | uppercase}}</p>
+    <p>{{{foo: 'bar', baz: 42} | json}}</p>
+    <p>{{1459461289000 | date}}</p>
+    <p>{{1459461289000 | date:'MM/dd/yyyy @ h:mma'}}</p>
+    <p><input ng-model="userInput" /> Uppercased: {{userInput | uppercase}}</p>
   </body>
 </html>
