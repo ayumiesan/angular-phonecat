@@ -7,7 +7,7 @@ describe('PhoneCat Application', function() {
 
   it('should redirect `index.html` to `index.html#!/phones', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toBe('/phones');
+    expect(browser.getCurrentUrl()).toBe('http://localhost:8000/index.html#!/phones');
   });
 
   describe('View: Phone list', function() {
@@ -62,7 +62,7 @@ describe('PhoneCat Application', function() {
       query.sendKeys('nexus');
 
       element.all(by.css('.phones li a')).first().click();
-      expect(browser.getLocationAbsUrl()).toBe('/phones/nexus-s');
+      expect(browser.getCurrentUrl()).toBe('http://localhost:8000/index.html#!/phones/nexus-s');
     });
 
   });
