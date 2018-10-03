@@ -14,11 +14,10 @@ angular.
       element.css({
         display: 'block',
         position: 'absolute',
-        top: 500,
-        left: 0
+          opacity: 0
       }).animate({
-        top: 0
-      }, done);
+          opacity: 1
+      }, 1000, done);
 
       return function animateInEnd(wasCanceled) {
         if (wasCanceled) element.stop();
@@ -30,11 +29,10 @@ angular.
 
       element.css({
         position: 'absolute',
-        top: 0,
-        left: 0
+        opacity: 1
       }).animate({
-        top: -500
-      }, done);
+        opacity: 0
+      }, 1000, done);
 
       return function animateOutEnd(wasCanceled) {
         if (wasCanceled) element.stop();
